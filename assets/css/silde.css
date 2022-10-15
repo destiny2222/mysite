@@ -1,0 +1,182 @@
+.swiper-container {
+    width: 100%;
+    height: calc(100vh -60px);
+    background: #222222;
+  }
+  @media (min-width: 60em) {
+    .swiper-container {
+      height: 60vh;
+      min-height: 600px;
+    }
+  }
+  .swiper-container .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #222222;
+  }
+  @media (min-width: 60em) {
+    .swiper-container .swiper-wrapper .swiper-slide {
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .overlay {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    opacity: 0.3;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .swiper-img {
+    display: block;
+    background-size: cover;
+    background-position: right center;
+    height: 30vh;
+    max-height: 300px;
+    width: 100%;
+  }
+  @media (min-width: 40.625em) {
+    .swiper-container .swiper-wrapper .swiper-slide .swiper-img {
+      height: 420px;
+      width: 100%;
+      max-height: initial;
+    }
+  }
+  @media (min-width: 60em) {
+    .swiper-container .swiper-wrapper .swiper-slide .swiper-img {
+      background-position: right center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .swiper-img.slide-1 {
+    background: url("https://photos.smugmug.com/Images/Homepage-Gallery/i-6d8M7jf/0/721218b2/XL/_DEK7070-XL.jpg") no-repeat;
+    background-size: cover;
+    background-position: right center;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .swiper-img.slide-2 {
+    background: url("https://photos.smugmug.com/Images/Abandonedtobaccobarn/i-JLrVDz2/2/ef846ecb/XL/_DEK7781-XL.jpg") no-repeat;
+    background-size: cover;
+    background-position: right center;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .swiper-img.slide-3 {
+    background: url("https://photos.smugmug.com/Clients/Deviantdistillers/Deviant-distillers-gallery-2/i-HQNMwfx/3/fce6b6d9/XL/_DEK2472-XL.jpg") no-repeat;
+    background-size: cover;
+    background-position: right center;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .swiper-content {
+    position: relative;
+    color: white;
+    background: #222222;
+    height: 50%;
+    padding: 1em 1.4em 3em;
+  }
+  @media (min-width: 60em) {
+    .swiper-container .swiper-wrapper .swiper-slide .swiper-content {
+      width: 80%;
+      height: 40%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: absolute;
+      background: transparent;
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      z-index: 999999999;
+    }
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .swiper-content h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 800;
+  }
+  @media (min-width: 60em) {
+    .swiper-container .swiper-wrapper .swiper-slide .swiper-content h1 {
+      font-size: 2.5em;
+      line-height: 1.2;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .swiper-content p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  @media (min-width: 60em) {
+    .swiper-container .swiper-wrapper .swiper-slide .swiper-content p {
+      font-size: 19px;
+    }
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .swiper-content .content {
+    text-align: left;
+    max-width: 580px;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide .swiper-content .content button {
+    background: #e4e4e4;
+    border: 0;
+    color: #222;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .swiper-container .swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.7;
+  }
+  
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 20px;
+    position: relative;
+  }
+  @media (min-width: 60em) {
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+      position: absolute;
+      bottom: 30px;
+    }
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    top: 24%;
+    height: 24px;
+    widtH: 40px;
+    opacity: 0.6;
+  }
+  @media (min-width: 60em) {
+    .swiper-button-next, .swiper-button-prev {
+      top: 50%;
+      height: 60px;
+      width: 40px;
+    }
+  }
+  
+  @media (min-width: 60em) {
+    .swiper-button-next {
+      right: 30px;
+    }
+  }
+  
+  @media (min-width: 60em) {
+    .swiper-button-prev {
+      left: 30px;
+    }
+  }
